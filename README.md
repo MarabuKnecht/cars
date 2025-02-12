@@ -1,5 +1,4 @@
-# cars
-Racer-Brettspiel
+# Racer-Brettspiel
 Unser Ziel ist es ein Brettspiel zu entwickeln in dem die Spieler versuchen mit ihrem Rennwagen zuerst ins Ziel zu gelangen.
 
 Die Rennwagen sollen unterschiedlich sein und trotzdem soll jeder Spieler, potenziell mit jedem Wagen gewinnen können.
