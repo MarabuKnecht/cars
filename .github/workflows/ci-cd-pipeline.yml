@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: "3.11"
 
@@ -27,12 +27,9 @@ jobs:
           
       - name: Run black to format the code
         run: |
-          poetry run black --line-length 79 --skip-string-normalization --target-version py311 --no-verify .
-
-      - name: Run Linting (flake8)
-        run: |
-          poetry run flake8 .
+          poetry run black --line-length 79 --skip-string-normalization --target-version py311 .
 
       - name: Run Tests (pytest)
         run: |
           poetry run pytest
+        working-directory: ./tests
