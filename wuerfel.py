@@ -5,7 +5,7 @@ class Wuerfel:
 
     """Diese initialisiert."""
 
-    def __init__(self, seiten_anzahl: int, wuerfel_name: int):
+    def __init__(self, seiten_anzahl: int, wuerfel_name: str):
         self.seiten_anzahl = seiten_anzahl
         self.wuerfel_name = wuerfel_name
 
