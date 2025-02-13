@@ -1,16 +1,17 @@
-[tool.poetry]
+[project]
 name = "cars"
 version = "0.1.0"
 description = ""
-authors = ["Dein Name <dein.email@example.com>"]
-license = "MIT"
-packages = [
-    { include = "cars" },
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
 ]
 
-[tool.poetry.dependencies]
-python = "^3.11"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
