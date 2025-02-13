@@ -9,7 +9,7 @@ license = "MIT"
 python = "^3.11"
 
 [tool.poetry.packages]
-packages = find_packages(include = ["cars"] )
+packages = [{ include = "cars" }]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
