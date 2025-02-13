@@ -4,6 +4,9 @@ version = "0.1.0"
 description = ""
 authors = ["Dein Name <dein.email@example.com>"]
 license = "MIT"
+packages = [
+    { include = "cars" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.11"
