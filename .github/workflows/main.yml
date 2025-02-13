@@ -19,9 +19,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install Poetry
-        run: |
-          (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
-          echo "$env:APPDATA\Python\Scripts" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8
+        run: curl -sSL https://install.python-poetry.org | python3 -
 
       - name: Install Dependencies with Poetry
         run: |
