@@ -27,7 +27,7 @@ jobs:
           
       - name: Run black to format the code
         run: |
-          poetry run black --line-length 79 --skip-string-normalization --target-version py311 --no-verify .
+          poetry run black --line-length 79 --skip-string-normalization --target-version py311 .
 
       - name: Run Linting (flake8)
         run: |
