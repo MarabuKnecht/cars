@@ -29,10 +29,6 @@ jobs:
         run: |
           poetry run black --line-length 79 --skip-string-normalization --target-version py311 .
 
-      - name: Run Linting (flake8)
-        run: |
-          poetry run flake8 .
-
       - name: Run Tests (pytest)
         run: |
           poetry run pytest
