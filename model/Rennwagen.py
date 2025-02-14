@@ -1,3 +1,6 @@
+from wuerfel import Wuerfel
+
+
 class Rennwagen:
     """
     Klasse zur Repräsentation eines Rennwagens mit Würfeln und einem festen
