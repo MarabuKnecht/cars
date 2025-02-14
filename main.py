@@ -8,7 +8,7 @@ def main():
     wagen1 = Rennwagen()
     wagen2 = Rennwagen("Toretto", 3, 4, 2)
     wagen3 = Rennwagen()
-    wagen4 = Rennwagen()
+    wagen4 = Rennwagen("Eduard", 2, 8, 1)
     wagen5 = Rennwagen()
     wagen6 = Rennwagen()
     wagen7 = Rennwagen()
