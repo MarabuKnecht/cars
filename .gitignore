@@ -1,0 +1,10 @@
+# Ignoriere virtuelle Umgebungen
+cars/venv/
+cars/.env/
+
+# Ignoriere Poetry-spezifische Dateien
+cars/.poetry/
+
+# IDE-spezifische Ordner (für PyCharm und IntelliJ)
+cars/.idea/
+

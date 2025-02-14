@@ -1,0 +1,35 @@
+name: CI/CD Pipeline
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install Poetry
+        run: curl -sSL https://install.python-poetry.org | python3 -
+
+      - name: Install Dependencies with Poetry
+        run: |
+          poetry install
+          
+      - name: Run black to format the code
+        run: |
+          poetry run black --line-length 79 --skip-string-normalization --target-version py311 .
+
+      - name: Run Tests (pytest)
+        run: |
+          poetry run pytest
+        working-directory: ./tests
