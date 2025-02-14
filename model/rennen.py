@@ -1,4 +1,4 @@
-from Rennwagen import Rennwagen
+from rennwagen import Rennwagen
 from comments import autos
 class Rennen:
     """legt eine klasse an"""
