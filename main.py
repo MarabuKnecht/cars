@@ -14,4 +14,4 @@ def main():
     wagen7 = Rennwagen()
 
     rennen = Rennen()
-    rennen.startetrennen(wagen1,wagen2,wagen2,wagen3,wagen4,wagen5,wagen6,wagen7)
+    rennen.startetrennen(wagen1,wagen2,wagen3,wagen4,wagen5,wagen6,wagen7)
