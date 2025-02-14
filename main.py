@@ -11,7 +11,7 @@ def main():
     wagen4 = Rennwagen("Eduard", 2, 8, 1)
     wagen5 = Rennwagen()
     wagen6 = Rennwagen("McQueen", 2, 6,3)
-    wagen7 = Rennwagen()
+    wagen7 = Rennwagen("Ford Focus", 1,12,1)
 
     rennen = Rennen()
     rennen.startetrennen(wagen1,wagen2,wagen3,wagen4,wagen5,wagen6,wagen7)
