@@ -1,12 +1,14 @@
+from rennwagen import Rennwagen
+from comments import autos
 class Rennen:
     """legt eine klasse an"""
     def __init__(self):
         """setzt die Straekenlaenge auf 100"""
         self.Rennen_laenge = 100
 
-    def startetrennen (self,car1,car2,car3,car4,car5,car6,car7):
+    def startetrennen (self, autos):
         """Stratet das Rennen"""
-        wagenliste = [car1,car2,car3,car4,car5,car6,car7]
+        wagenliste = autos
         wagenImZiel = False
         gewinnerstrecke = 0
         gewinnerliste = []
@@ -19,7 +21,7 @@ class Rennen:
                 """startet die naeste runde"""
                 aktulerwagenstandort = car.getZuruekgelegteStrecke()
                 """holt sich vom akuellen wagen seine position"""
-                if  aktulerwagenstandort >= 100:
+                if aktulerwagenstandort >= 100:
                     """ueberprueft ob der wagen im ziel ist """
                     wagenImZiel = True
                     """setzt die bedingung das das ende nach der runde 
