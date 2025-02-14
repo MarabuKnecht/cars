@@ -5,9 +5,8 @@ class Wuerfel:
 
     """Diese methode initialisiert den Würfel und seine Attribute."""
 
-    def __init__(self, seiten_anzahl: int, wuerfel_name: str):
+    def __init__(self, seiten_anzahl: int,):
         self.seiten_anzahl = seiten_anzahl
-        self.wuerfel_name = wuerfel_name
 
     def wuerfeln(self):
         """
