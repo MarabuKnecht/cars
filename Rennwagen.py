@@ -13,7 +13,7 @@ class Rennwagen:
         self.wuerfel = [Wuerfel(wuerfel_seiten) for _ in range(wuerfel_anzahl)]
         # Liste der Würfel
         self.buff = buff  # Fester Bonuswert
-        self.position = 0  # Aktuelle Position des Wagens
+        self.gefahrene_strecke = 0  # die gefahrene Strecke des Rennwagens
         self.siege = 0  # Anzahl der gewonnenen Rennen
 
     def fahren(self):
@@ -23,7 +23,7 @@ class Rennwagen:
         Aktualisiert die Position des Rennwagens.
         """
         wurf = sum(w.wuerfeln() for w in self.wuerfel)
-        self.position += wurf + self.buff
+        self.gefahrene_strecke += wurf + self.buff
         return wurf + self.buff
 
     def erhoehe_siegesanzahl(self):
@@ -42,6 +42,6 @@ class Rennwagen:
         """
         Setzt die Position des Rennwagens zurück
         """
-        self.position = 0
+        self.gefahrene_strecke = 0
 
 
