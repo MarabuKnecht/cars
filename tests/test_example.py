@@ -3,3 +3,4 @@ def reverse_text(text):
 
 def test_reverse_text():
     assert reverse_text('python') == 'nohtyp'
+    print("Täst")
